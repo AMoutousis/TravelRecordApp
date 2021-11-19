@@ -33,7 +33,7 @@ namespace Navigation
 
             if (rows > 0)
             {
-                DisplayAlert("Success", "Experience Successfully Inserted", "OK");)
+                DisplayAlert("Success", "Experience Successfully Inserted", "OK");
             }
             else
             {
