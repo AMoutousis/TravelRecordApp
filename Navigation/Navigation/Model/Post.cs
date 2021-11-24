@@ -8,9 +8,9 @@ namespace Navigation.Model
     public class Post
     {
         [PrimaryKey, AutoIncrement]
-        public int _id { get; set; }
+        public int Id { get; set; }
         [MaxLength(250)]
-        public string _experience { get; set; }
+        public string Experience { get; set; }
 
 
     }

@@ -17,6 +17,7 @@ namespace Navigation.Droid
 
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
+            Xamarin.FormsMaps.Init(this, savedInstanceState);
 
             string dbName= "travel_db.sqlite";
 
@@ -26,7 +27,7 @@ namespace Navigation.Droid
             //combing both folderpath and the dbName
             string fullPath = Path.Combine(folderPath, dbName);
 
-            LoadApplication(new App());
+            LoadApplication(new App(fullPath));
         }
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)
         {

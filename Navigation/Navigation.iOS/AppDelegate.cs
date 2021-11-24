@@ -23,7 +23,9 @@ namespace Navigation.iOS
         //
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
+            //this is critical so iOS knows this is a Xamarin app
             global::Xamarin.Forms.Forms.Init();
+            //this tells iOS that we will be using maps
 
 
             string dbName = "travel_db.sqlite";

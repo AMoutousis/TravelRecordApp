@@ -6,7 +6,7 @@ namespace Navigation
 {
     public partial class App : Application
     {
-        public static string _databaseLocation = string.Empty;
+        public static string DatabaseLocation = string.Empty;
         public App()
         {
             InitializeComponent();
@@ -15,13 +15,13 @@ namespace Navigation
             MainPage = new NavigationPage(new MainPage());
         }
 
-        public App(string databaseLocation)
+        public App(string databasePath)
         {
             InitializeComponent();
 
             MainPage = new NavigationPage(new MainPage());
 
-            _databaseLocation = databaseLocation;
+            DatabaseLocation = databasePath;
 
         }
 
